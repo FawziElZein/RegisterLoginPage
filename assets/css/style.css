@@ -3,8 +3,29 @@
     width: 20px;
 }
 
+#separator{
+    display: flex;
+    align-items: center;
+}
+#separator span{
+    margin: 0 0.5em;
+}
+
 .line{
-    height: 1px;
     width: 100%;
-    background-color: gray;
+    height: 1px;
+    background-color: rgb(202, 202, 202);
+}
+
+footer div:first-child{
+    background-color: #1b74e4;
+}
+
+footer div img{
+    float: left;
+    width: 30px;
+}
+
+footer div:first-child:hover{
+    background-color: #1b74e4;
 }
