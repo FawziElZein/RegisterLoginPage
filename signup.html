@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +11,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
-
-<body class="bg-primary">
+<body>
     <section class="container">
-
         <div class="row mt-5">
-
             <div class="col-md-4 offset-md-4 p-4 rounded-3 bg-light">
-                <h1 class="mt-3 mb-4">Login</h1>
+                <h1 class="mt-3 mb-4">Signup</h1>
                 <form method="GET" class="validated-form" novalidate>
                     <div class="mb-3">
                         <label class="form-label" for="username">Username</label>
@@ -40,22 +36,25 @@
                             Please add password
                         </div>
                     </div>
-                    <div class="mb-4 text-primary text-center">
-                        <a href="">Forgot password ?</a>
+                    <div class="mb-3">
+                        <label class="form-label" for="retypedpassword">Password</label>
+                        <div class="input-group">
+                            <input class="form-control" type="password" id="retypedpassword" name="retypedpassword"
+                                aria-describedby="togglePassword" required>
+                            <span class="input-group-text" id="togglePassword"><img id="eyeicon"
+                                    src="assets/icons/eye-icon.png" alt="eye-icon for toggle password"></span>
+                        </div>
+                        <div class="invalid-feedback">
+                            Please add password
+                        </div>
                     </div>
-                    <button class="btn btn-success mb-3 w-100">Login</button>
+                    <button class="btn btn-success mb-3 w-100">Signup</button>
                     <div class="text-center">
-                        <p>Don't have an account ? <a href="signup.html">Signup</a> </p>
+                        <p>Already have an account? <a href="index.html">Login</a> </p>
                     </div>
                 </form>
-
-                <div class="line"></div>
             </div>
         </div>
     </section>
-
-    <script src="assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-    <script src="assets/js/app.js"></script>
 </body>
-
 </html>
